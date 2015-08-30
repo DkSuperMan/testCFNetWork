@@ -14,6 +14,10 @@
 		047F8EF91B92F722002CAEBF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 047F8EF81B92F722002CAEBF /* Images.xcassets */; };
 		047F8EFC1B92F722002CAEBF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047F8EFA1B92F722002CAEBF /* LaunchScreen.xib */; };
 		047F8F081B92F722002CAEBF /* testCFNetWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F8F071B92F722002CAEBF /* testCFNetWorkTests.m */; };
+		047F8F1E1B92F976002CAEBF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047F8F111B92F749002CAEBF /* CFNetwork.framework */; };
+		047F8F241B92FB57002CAEBF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047F8F231B92FB57002CAEBF /* Security.framework */; };
+		047F8F261B92FB5C002CAEBF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047F8F251B92FB5C002CAEBF /* Foundation.framework */; };
+		047F8F2D1B92FD7A002CAEBF /* HookUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 047F8F2A1B92FD7A002CAEBF /* HookUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		047F8F011B92F722002CAEBF /* testCFNetWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCFNetWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		047F8F061B92F722002CAEBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		047F8F071B92F722002CAEBF /* testCFNetWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testCFNetWorkTests.m; sourceTree = "<group>"; };
+		047F8F111B92F749002CAEBF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		047F8F231B92FB57002CAEBF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		047F8F251B92FB5C002CAEBF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		047F8F271B92FCF5002CAEBF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		047F8F291B92FD7A002CAEBF /* HookUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HookUtil.h; sourceTree = "<group>"; };
+		047F8F2A1B92FD7A002CAEBF /* HookUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HookUtil.m; sourceTree = "<group>"; };
+		047F8F2B1B92FD7A002CAEBF /* Macro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		047F8F2C1B92FD7A002CAEBF /* NSUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047F8F261B92FB5C002CAEBF /* Foundation.framework in Frameworks */,
+				047F8F241B92FB57002CAEBF /* Security.framework in Frameworks */,
+				047F8F1E1B92F976002CAEBF /* CFNetwork.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +78,8 @@
 		047F8EDF1B92F722002CAEBF = {
 			isa = PBXGroup;
 			children = (
+				047F8F251B92FB5C002CAEBF /* Foundation.framework */,
+				047F8F231B92FB57002CAEBF /* Security.framework */,
 				047F8EEA1B92F722002CAEBF /* testCFNetWork */,
 				047F8F041B92F722002CAEBF /* testCFNetWorkTests */,
 				047F8EE91B92F722002CAEBF /* Products */,
@@ -81,6 +98,8 @@
 		047F8EEA1B92F722002CAEBF /* testCFNetWork */ = {
 			isa = PBXGroup;
 			children = (
+				047F8F281B92FD7A002CAEBF /* Utilities */,
+				047F8F271B92FCF5002CAEBF /* PrefixHeader.pch */,
 				047F8EEF1B92F722002CAEBF /* AppDelegate.h */,
 				047F8EF01B92F722002CAEBF /* AppDelegate.m */,
 				047F8EF21B92F722002CAEBF /* ViewController.h */,
@@ -96,6 +115,7 @@
 		047F8EEB1B92F722002CAEBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				047F8F111B92F749002CAEBF /* CFNetwork.framework */,
 				047F8EEC1B92F722002CAEBF /* Info.plist */,
 				047F8EED1B92F722002CAEBF /* main.m */,
 			);
@@ -118,6 +138,17 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		047F8F281B92FD7A002CAEBF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				047F8F291B92FD7A002CAEBF /* HookUtil.h */,
+				047F8F2A1B92FD7A002CAEBF /* HookUtil.m */,
+				047F8F2B1B92FD7A002CAEBF /* Macro.h */,
+				047F8F2C1B92FD7A002CAEBF /* NSUtil.h */,
+			);
+			path = Utilities;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -219,6 +250,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047F8F2D1B92FD7A002CAEBF /* HookUtil.m in Sources */,
 				047F8EF41B92F722002CAEBF /* ViewController.m in Sources */,
 				047F8EF11B92F722002CAEBF /* AppDelegate.m in Sources */,
 				047F8EEE1B92F722002CAEBF /* main.m in Sources */,
@@ -343,9 +375,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iOS Development: Liu Cao (EX33S4LRW7)";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = testCFNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f8858e95-d889-4ea0-90b4-a1d639ef35e8";
 			};
 			name = Debug;
 		};
@@ -353,9 +389,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iOS Development: Liu Cao (EX33S4LRW7)";
+				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = testCFNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f8858e95-d889-4ea0-90b4-a1d639ef35e8";
 			};
 			name = Release;
 		};
